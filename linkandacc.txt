@@ -1,0 +1,34 @@
+	Add html to SP Web Part
+../SiteAssets/CompanyBranding/html/latest_announcements.html
+	Img link
+https://niftit.sharepoint.com/sites/thao/siteassets/companybranding/imgs/img-carousel.png
+
+	After click Web part zone, add:
+<WebPartPages:WebPartZone id="employee announcements" runat="server" title="Zone 1">
+	<ZoneTemplate>
+	</ZoneTemplate>
+</WebPartPages:WebPartZone>
+
+SP 008:
+niftit\adm.nhut
+Micr0s0ft!
+
+tan
+vochitan1990
+
+khoa@niftit.onmicrosoft.com
+Micr0s0ft
+
+Ng@yenL!nh
+NIFTITSP006
+10.10.10.16
+niftit\linh
+
+Wordpress
+http://wp.niftit.com/learningstrategies
+User: niftit
+Password: Micr0s0ft!
+
+report
+https://niftitusa.sharepoint.com/VNTeam/Lists/Project%20Daily%20Report/AllItems.aspx
+
