@@ -1,0 +1,55 @@
+git stash
+git pull origin master
+git stash apply stash@{0}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>  
+    <script src="~/lib/bootstrap-datepicker/js/jquery.ui.datepicker-vi-VN.js"></script>
+	
+	
+1/ Mo SOL Server
+2/ Click New Query button
+3/ Database name must be TWG_HR
+4/ Copy command below and paste to SQL file
+
+delete [dbo].[NhanVienHoSo] where MaNhanVien = 'TWEDU_NV_03121';
+
+  update [dbo].[NhanVienHoSo] set TrangThaiXacNhan = 1 where MaNhanVien = 'TWEDU_NV_03121'
+
+  update [dbo].[NhanVien] set TrangThaiXacNhan = 1 where MaNhanVien = 'TWEDU_NV_03121'
+Note: TrangThaiXacNhan = 1 2 3
+
+
+SQL:
+ TWG_HR
+ TWG_TMS
+ 
+ onRowClick: function (e) {
+            if (e.rowType == 'group') {
+                if (e.isExpanded)
+                    e.component.collapseRow(e.key);
+                else
+                    e.component.expandRow(e.key);
+            }
+        },
+		
+ .OnRowClick("collapseRow")
+<script type="text/javascript">
+    function collapseRow(e) {
+         if (e.rowType == 'group') {
+                if (e.isExpanded)
+                    e.component.collapseRow(e.key);
+                else
+                    e.component.expandRow(e.key);
+            }
+        }
+</script>
+
+        {
+            location: "after",
+            template: function () {
+                return $("<img class='icon-hand-slide' src='../img/svgs/hand_slide.svg'> ")
+            }
+        }
+		
+		
