@@ -1,0 +1,56 @@
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody class="parent-row child-row" groupindex="3">
+                                    <tr class="copplase-row">
+                                        <td>Collapse parent 1</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="child-row">
+                                    <tr class="copplase-row">
+                                        <td>Collapse 2</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="child-row">
+                                    <tr class="copplase-row">
+                                        <td>Collapse 3</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Collapse 4</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="parent-row child-row" groupindex="3">
+                                    <tr class="copplase-row">
+                                        <td>Collapse parent 2</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="child-row">
+                                    <tr class="copplase-row">
+                                        <td>Collapse 2</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="child-row">
+                                    <tr class="copplase-row">
+                                        <td>Collapse 3</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Collapse 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+    
+    
+    $("table .copplase-row").click(function () {
+        var tbodyCurrent = $(this).parent("tbody");
+        console.log(tbodyCurrent);
+        if ($(this).parent("tbody").next("tbody").hasClass("d-none")) {
+            $(this).parent("tbody").next("tbody").removeClass("d-none");
+        } else {
+            $(this).parent("tbody").nextUntil("tbody.parent-row").addClass("d-none");
+
+        }
+    });
